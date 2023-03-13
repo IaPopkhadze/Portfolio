@@ -1,0 +1,438 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .home_content_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.home .home_content_container .logo {
+  font-family: "Menlo";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 10px solid white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 230px;
+  height: 200px;
+  background-color: black;
+  color: white;
+  font-size: 3.5rem;
+}
+.home .home_content_container .name {
+  color: #302e4d;
+}
+.home .home_content_container .profession {
+  color: #6b688e;
+  font-family: "Menlo";
+  font-weight: bold;
+  text-shadow: 1px 1px 0px black;
+}
+.home .home_content_container .icons_container {
+  display: flex;
+  gap: 1rem;
+}
+.home .home_content_container .icons_container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #302e4d;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home .home_content_container .icons_container a:hover {
+  transform: translateY(-5px);
+  background-color: white;
+  color: #302e4d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.about {
+  background-color: #f2f2fc;
+}
+.about .about_content {
+  padding: 4rem;
+}
+.about .about_content .main_title {
+  font-size: 2.3rem;
+  color: #302e4d;
+}
+.about .about_content .line {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 5px;
+  background-color: #ec1839;
+}
+.about .about_content .about_description {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4f4d74;
+}
+.about .about_content .description {
+  margin-top: 1.5rem;
+  color: #78769a;
+  font-size: 1.1rem;
+}
+.about .about_content .personal_info {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.about .about_content .personal_info .personal_info_child {
+  width: 50%;
+}
+.about .about_content .personal_info .personal_info_child p {
+  color: #4a4772;
+  border-bottom: 1px solid #e8dfec;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+.about .about_content .personal_info .personal_info_child span {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+.about .about_content .btns_container {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+.about .about_content .btns_container .my_btn {
+  background-color: #ec1839;
+  border: 0;
+  padding: 0.7rem 1rem;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.about .about_content .btns_container .my_btn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+  transform: translateY(-3px);
+}
+.about .about_content .courses_container {
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.about .about_content .courses_container .each_course_container {
+  padding: 1rem;
+  border-radius: 0.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.about .about_content .courses_container .each_course_container .image_language {
+  display: flex;
+  align-items: center;
+}
+.about .about_content .courses_container .each_course_container .image_language .language_img {
+  width: 50px;
+  height: 50px;
+}
+.about .about_content .courses_container .each_course_container .image_language .language {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #646276;
+}
+.about .about_content .courses_container .each_course_container ul {
+  margin-top: 1rem;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.about .about_content .courses_container .each_course_container ul li {
+  color: #4a4772;
+}
+.about .about_content .skills_personalities {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+}
+.about .about_content .skills_personalities .cont {
+  position: relative;
+  flex: 1;
+  border-left: 1px solid #4f4d74;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about .about_content .skills_personalities .cont p {
+  color: #4a4772;
+  padding: 0.3rem 0;
+}
+.about .about_content .skills_personalities .cont .circ {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background-color: #302e4d;
+  border-radius: 50%;
+}
+.about .about_content .skills_personalities .cont .title_container {
+  display: flex;
+  align-items: center;
+  color: #4a4772;
+  gap: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.about .about_content .skills_personalities .cont .title_container .ico {
+  font-size: 1.2rem;
+}
+.about .about_content .skills_personalities .cont .title_container p {
+  font-weight: bold;
+}
+
+.portfolioo {
+  background-color: #f2f2fc;
+  width: 100%;
+  height: 100vh;
+}
+.portfolioo .portfolioo_content {
+  padding: 4rem;
+}
+.portfolioo .portfolioo_content .main_title {
+  font-size: 2.3rem;
+  color: #302e4d;
+}
+.portfolioo .portfolioo_content .line {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 5px;
+  background-color: #ec1839;
+}
+
+.contact {
+  background-color: #f2f2fc;
+  width: 100%;
+}
+.contact .contact_content {
+  padding: 4rem;
+}
+.contact .contact_content .main_title {
+  font-size: 2.3rem;
+  color: #302e4d;
+}
+.contact .contact_content .line {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  height: 5px;
+  background-color: #ec1839;
+}
+.contact .contact_content .contact_boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 4rem auto;
+}
+.contact .contact_content .contact_boxes .each_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.contact .contact_content .contact_boxes .each_box .icon {
+  color: #ec1839;
+  font-size: 2.5rem;
+}
+.contact .contact_content .contact_boxes .each_box p {
+  color: #4a4772;
+}
+.contact .contact_content form .send_btn {
+  margin-top: 2rem;
+  width: 150px;
+  font-size: 1.3rem;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: #ec1839;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.contact .contact_content form .send_btn:hover {
+  width: 160px;
+  font-size: 1.4rem;
+}
+.contact .contact_content form .name_email {
+  display: flex;
+  gap: 1rem;
+}
+.contact .contact_content form .name_email .input_container {
+  position: relative;
+  flex: 1;
+  height: 60px;
+}
+.contact .contact_content form .name_email .input_container input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 5rem;
+  outline: none;
+  font-size: 1.3rem;
+  color: #52506e;
+  padding: 0 1.5rem;
+}
+.contact .contact_content form .name_email .input_container ::-moz-placeholder {
+  font-size: 1.3rem;
+  color: #8f8daf;
+}
+.contact .contact_content form .name_email .input_container ::placeholder {
+  font-size: 1.3rem;
+  color: #8f8daf;
+}
+.contact .contact_content form .name_email .input_container .label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.contact .contact_content form .input_container {
+  height: 60px;
+}
+.contact .contact_content form .input_container input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 5rem;
+  outline: none;
+  font-size: 1.3rem;
+  color: #52506e;
+  padding: 0 1.5rem;
+}
+.contact .contact_content form .input_container textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 2rem;
+  outline: none;
+  font-size: 1.3rem;
+  color: #52506e;
+  padding: 1.5rem;
+}
+.contact .contact_content form .input_container ::-moz-placeholder {
+  font-size: 1.3rem;
+  color: #8f8daf;
+}
+.contact .contact_content form .input_container ::placeholder {
+  font-size: 1.3rem;
+  color: #8f8daf;
+}
+
+@media (max-width: 400px) {
+  .home .home_content_container .name {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1300px) {
+  .about .about_content .main_title {
+    font-size: 1.5rem;
+  }
+  .about .about_content .about_description {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about_content .main_title {
+    font-size: 1.5rem;
+  }
+  .about .about_content .description {
+    font-size: 0.8rem;
+  }
+  .about .about_content .about_description {
+    font-size: 1.1rem;
+  }
+  .about .about_content .personal_info .personal_info_child p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 870px) {
+  .about .about_content .btns_container {
+    margin-top: 1.5rem;
+  }
+  .about .about_content .btns_container .my_btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+  }
+  .about .about_content .personal_info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .about .about_content .personal_info .personal_info_child {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .about .about_content .courses_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about .about_content .skills_personalities {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .about .about_content .skills_personalities .cont {
+    grid-template-columns: repeat();
+  }
+}
+@media (max-width: 900px) {
+  .about .about_content .courses_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .about .about_content .skills_personalities .cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1010px) {
+  .contact .contact_content .contact_boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .contact .contact_content form .name_email {
+    flex-direction: column;
+  }
+  .contact .contact_content form .name_email .input_container input {
+    height: 50px;
+  }
+  .contact .contact_content .contact_boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=pagesStyle.css.map */

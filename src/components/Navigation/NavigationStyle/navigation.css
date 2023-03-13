@@ -1,0 +1,76 @@
+.navigation {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navigation .portfolio {
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #302e4d;
+  padding-left: 1rem;
+  padding-bottom: 0.3rem;
+  position: relative;
+}
+.navigation .portfolio .border1 {
+  position: absolute;
+  border: 3px solid #ec1839;
+  top: 0;
+  width: 30px;
+}
+.navigation .portfolio .border2 {
+  position: absolute;
+  border: 3px solid #ec1839;
+  top: 0;
+  height: 30px;
+}
+.navigation .portfolio .border3 {
+  position: absolute;
+  border: 3px solid #ec1839;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+}
+.navigation .portfolio .border4 {
+  position: absolute;
+  border: 3px solid #ec1839;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+}
+.navigation .list_items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.navigation .list_items li {
+  border-bottom: 1px solid #e8dfec;
+  padding-bottom: 0.7rem;
+  list-style: none;
+  color: #302e4d;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.4s;
+}
+.navigation .list_items li:hover {
+  transform: translateX(10px);
+  color: #ec1839;
+  font-weight: bold;
+}
+.navigation .autor {
+  color: rgb(167, 148, 148);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1300px) {
+  .navigation .portfolio {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=navigation.css.map */
