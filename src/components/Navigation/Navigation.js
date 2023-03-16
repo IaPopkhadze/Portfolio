@@ -45,18 +45,7 @@ const Navigation = () => {
           </span>
           <p>About</p>
         </li>
-        <li
-          onClick={() => {
-            setNavbarActivation(2);
-            navigate("services");
-          }}
-          style={navbarActivation == 2 ? { color: "#ec1839" } : null}
-        >
-          <span>
-            <AiOutlineBars />
-          </span>
-          <p>Services</p>
-        </li>
+
         <li
           onClick={() => {
             setNavbarActivation(3);

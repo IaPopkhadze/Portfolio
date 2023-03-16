@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 .home {
   width: 100%;
   height: 100vh;
@@ -227,10 +228,107 @@
   height: 5px;
   background-color: #ec1839;
 }
+.portfolioo .portfolioo_content .portfolio_container .card-container {
+  width: 300px;
+  height: 350px;
+  perspective: 1000px;
+}
+.portfolioo .portfolioo_content .portfolio_container .card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+.portfolioo .portfolioo_content .portfolio_container .card:hover {
+  transform: rotateY(180deg);
+}
+.portfolioo .portfolioo_content .portfolio_container .front,
+.portfolioo .portfolioo_content .portfolio_container .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.portfolioo .portfolioo_content .portfolio_container .front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2fc;
+  border-radius: 2rem;
+  box-shadow: inset 3px 4px 6px 0px #cfcfcf, inset -3px -4px 6px #fefefe;
+}
+.portfolioo .portfolioo_content .portfolio_container .front img {
+  width: 80%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+}
+.portfolioo .portfolioo_content .portfolio_container .front h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.portfolioo .portfolioo_content .portfolio_container .back {
+  transform: rotateY(180deg);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 2rem;
+  background-color: whitesmoke;
+}
+.portfolioo .portfolioo_content .portfolio_container .back .buttons_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.portfolioo .portfolioo_content .portfolio_container .back .buttons_container .project {
+  width: 100%;
+  color: #8b8b8b;
+  font-weight: bold;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  box-shadow: 5px 5px 5px #cbcbcb, -5px -5px 8px #ffffff;
+}
+.portfolioo .portfolioo_content .portfolio_container .back .buttons_container .project:active {
+  box-shadow: inset 3px 4px 4px 0px #b9b9b9, inset -3px -4px 4px 0px #fefefe;
+}
+.portfolioo .portfolioo_content .portfolio_container .back .buttons_container .code {
+  color: #8b8b8b;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  border-radius: 39px;
+  background: #f5f5f5;
+  box-shadow: inset 3px 4px 4px 0px #b9b9b9, inset -3px -4px 4px 0px #fefefe;
+}
+.portfolioo .portfolioo_content .portfolio_container .back .buttons_container .code:active {
+  box-shadow: 5px 5px 5px #cbcbcb, -5px -5px 8px #ffffff;
+}
+.portfolioo .portfolioo_content .portfolio_container .back p {
+  font-size: 20px;
+  text-align: center;
+}
 
 .contact {
   background-color: #f2f2fc;
   width: 100%;
+  min-height: 100vh;
 }
 .contact .contact_content {
   padding: 4rem;

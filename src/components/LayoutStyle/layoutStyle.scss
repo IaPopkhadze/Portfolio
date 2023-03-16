@@ -1,7 +1,7 @@
 .layout {
   display: flex;
   .hamburger {
-visibility: hidden;
+    visibility: hidden;
     width: 40px;
     height: 40px;
     border-radius: 0.5rem;
@@ -16,6 +16,53 @@ visibility: hidden;
     z-index: 10000;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
       rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+  
+    background-color:  #17171e;
+    z-index: 1000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 2rem;
+      height: 100vh;
+      .listItem {
+        color: whitesmoke;
+       text-decoration: none;
+       border-bottom: 3px solid whitesmoke;
+       padding: 1rem;
+       border-radius: 2rem;
+      }
+      .listItem:hover{
+      
+        color:rgb(236, 24, 57);
+        font-weight: bold;
+        text-shadow: 1px 1px 2px  black;
+        border-bottom: 3px solid rgb(236, 24, 57);
+
+
+      }
+    }
+  }
+
+  .overlay.open {
+    height: 100%;
   }
   .layout_left_side {
     width: 20%;
@@ -33,7 +80,6 @@ visibility: hidden;
     left: 20%;
   }
 }
-
 @media (max-width: 1000px) {
   .layout {
     .layout_left_side {
@@ -51,10 +97,10 @@ visibility: hidden;
     .layout_left_side {
       display: none;
     }
-    .hamburger{
+    .hamburger {
       visibility: visible;
     }
-   
+
     .layout_right_side {
       width: 100%;
 
