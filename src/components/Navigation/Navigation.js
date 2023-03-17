@@ -7,7 +7,7 @@ import { HiDocumentText } from "react-icons/hi";
 import { BsChatTextFill } from "react-icons/bs";
 import { useNavigate, Link } from "react-router-dom";
 const Navigation = () => {
-  const [navbarActivation, setNavbarActivation] = useState(0);
+  const [navbarActivation, setNavbarActivation] = useState(null);
   const navigate = useNavigate();
   return (
     <div className="navigation">
