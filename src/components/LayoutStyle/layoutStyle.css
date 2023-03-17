@@ -43,15 +43,15 @@
 .layout .overlay nav .listItem {
   color: whitesmoke;
   text-decoration: none;
-  border-bottom: 3px solid whitesmoke;
-  padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 7px;
+  padding: 20px 45px;
+  background: #17171e;
+  box-shadow: inset 4px 4px 5px #09090c, inset -4px -4px 5px #252530;
 }
 .layout .overlay nav .listItem:hover {
-  color: rgb(236, 24, 57);
-  font-weight: bold;
   text-shadow: 1px 1px 2px black;
-  border-bottom: 3px solid rgb(236, 24, 57);
+  background: #21212b;
+  box-shadow: 4px 4px 5px #09090c, -4px -4px 5px #252530;
 }
 .layout .overlay.open {
   height: 100%;
