@@ -12,7 +12,7 @@ import Contact from "./components/Pages/Contact/Contact.js";
 import Portfolio from "./components/Pages/Portfolio/Portfolio.js";
 import { useState } from "react";
 import Navigation from "./components/Navigation/Navigation";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { GiHamburgerMenu } from "react-icons/gi";
 function App() {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
 
@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter>
       <div className="layout">
         <div className="hamburger" onClick={toggleOverlay}>
-          <RxHamburgerMenu />
+          <GiHamburgerMenu />
         </div>
         {/* hamburger menu */}
         <div className={isOverlayOpen ? "overlay open" : "overlay"}>
